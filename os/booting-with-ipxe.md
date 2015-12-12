@@ -41,7 +41,9 @@ CoreOS is released into stable, alpha and beta channels. Releases to each channe
 
 set base-url http://alpha.release.core-os.net/amd64-usr/current
 kernel ${base-url}/coreos_production_pxe.vmlinuz cloud-config-url=http://example.com/pxe-cloud-config.yml
+imgverify coreos_production_pxe.vmlinuz ${base-url}/coreos_production_pxe.vmlinuz.sig
 initrd ${base-url}/coreos_production_pxe_image.cpio.gz
+imgverify coreos_production_pxe_image.cpio.gz ${base-url}/coreos_production_pxe_image.cpio.gz.sig
 boot</pre>
     </div>
     <div class="tab-pane" id="beta-create">
@@ -51,7 +53,9 @@ boot</pre>
 
 set base-url http://beta.release.core-os.net/amd64-usr/current
 kernel ${base-url}/coreos_production_pxe.vmlinuz cloud-config-url=http://example.com/pxe-cloud-config.yml
+imgverify coreos_production_pxe.vmlinuz ${base-url}/coreos_production_pxe.vmlinuz.sig
 initrd ${base-url}/coreos_production_pxe_image.cpio.gz
+imgverify coreos_production_pxe_image.cpio.gz ${base-url}/coreos_production_pxe_image.cpio.gz.sig
 boot</pre>
     </div>
     <div class="tab-pane active" id="stable-create">
@@ -61,7 +65,9 @@ boot</pre>
 
 set base-url http://stable.release.core-os.net/amd64-usr/current
 kernel ${base-url}/coreos_production_pxe.vmlinuz cloud-config-url=http://example.com/pxe-cloud-config.yml
+imgverify coreos_production_pxe.vmlinuz ${base-url}/coreos_production_pxe.vmlinuz.sig
 initrd ${base-url}/coreos_production_pxe_image.cpio.gz
+imgverify coreos_production_pxe_image.cpio.gz ${base-url}/coreos_production_pxe_image.cpio.gz.sig
 boot</pre>
     </div>
   </div>
