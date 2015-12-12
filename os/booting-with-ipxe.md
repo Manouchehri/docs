@@ -39,6 +39,7 @@ CoreOS is released into stable, alpha and beta channels. Releases to each channe
       <pre>
 #!ipxe
 
+imgtrust --permanent
 set base-url http://alpha.release.core-os.net/amd64-usr/current
 kernel ${base-url}/coreos_production_pxe.vmlinuz cloud-config-url=http://example.com/pxe-cloud-config.yml
 imgverify coreos_production_pxe.vmlinuz ${base-url}/coreos_production_pxe.vmlinuz.sig
@@ -51,6 +52,7 @@ boot</pre>
       <pre>
 #!ipxe
 
+imgtrust --permanent
 set base-url http://beta.release.core-os.net/amd64-usr/current
 kernel ${base-url}/coreos_production_pxe.vmlinuz cloud-config-url=http://example.com/pxe-cloud-config.yml
 imgverify coreos_production_pxe.vmlinuz ${base-url}/coreos_production_pxe.vmlinuz.sig
@@ -63,6 +65,7 @@ boot</pre>
       <pre>
 #!ipxe
 
+imgtrust --permanent
 set base-url http://stable.release.core-os.net/amd64-usr/current
 kernel ${base-url}/coreos_production_pxe.vmlinuz cloud-config-url=http://example.com/pxe-cloud-config.yml
 imgverify coreos_production_pxe.vmlinuz ${base-url}/coreos_production_pxe.vmlinuz.sig
